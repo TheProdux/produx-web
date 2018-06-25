@@ -8,15 +8,22 @@ $comment = $_POST['comment'];
 
 if (!empty($username) || !empty($email) || !empty($phone) || !empty($company) ||
 !empty($interest) || !empty($comment)) {
+
+    /*------DAtABASE SELECTION-------*/
+
  $host = "localhost";
     $dbUsername = "root";
     $dbPassword = "";
     $dbname = "test1";
     //create connection
+
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
     if (mysqli_connect_error()) {
      die('Connect Error('. mysqli_connect_errno().')'. mysqli_connect_error());
     } else {
+
+        /*-------TABLE SELECTION--------*/
+
      $SELECT = "SELECT email From register Where email = ? Limit 1";
      $INSERT = "INSERT Into register (username, email, phone, company, interest, comment) values(?, ?, ?, ?, ?, ?)";
      //Prepare statement

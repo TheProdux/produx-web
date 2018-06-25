@@ -288,7 +288,7 @@
 							</div>
 							<div class="col-md-3 col-lg-3">
 								<div class="call-to-action-btn">
-									<a href="PrdUX-UX-Brochure.pdf" target="_blank" class="btn btn-lg btn-primary">Download Brochure!</a><span class="arrow hlb d-none d-md-block" data-appear-animation="rotateInUpLeft" style="top: -40px; left: 70%;"></span>
+									<a href="#popup"  class="btn btn-lg btn-primary btn-pop">Download Brochure!</a><span class="arrow hlb d-none d-md-block" data-appear-animation="rotateInUpLeft" style="top: -40px; left: 70%;"></span>
 								</div>
 							</div>
 						</div>
@@ -410,6 +410,190 @@ Tweets by @TheProdUX
   gtag('config', 'UA-111304676-1');
 </script>
 
+	
+<div class="cover">
+
+
+	
+	<div class="popup" id="popup">
+		
+		<form action="insert.php" method="POST" >
+			<a href="#popup1"><input class="close" type="button" value="&times;" id="close"></a>
+			  
+			   <h2>Downloading Form</h2>
+			  
+		 <table id="tab-pop">
+			 
+		  <tr>
+		   <td>Name :</td>
+		   <td><input type="text" name="username" required></td>
+		  </tr>
+		  <td>Email :</td>
+		   <td><input type="email" name="email" required></td>
+		  </tr> 
+		  <tr>
+		   <td>Phone No :</td>
+		   <td>
+			<input type="phone" name="phone" required>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td>Company Name :</td>
+		   <td><input type="text" name="company" required></td>
+		  </tr>
+		  <tr>
+		   <td>I am Instreted in :</td>
+		   <td>
+			<select name="interest" required>
+			 <option selected hidden value="">Select Code</option>
+			 <option value="New Business Opportunity">New Business Opportunity</option>
+			 <option value="Design Services">Design Services</option>
+			 <option value="Animations and Videos Projects">Animations and Videos Projects</option>
+			 <option value="UX recommendations for me app">UX recommendations for me app</option>
+			 <option value="Partnering and Business collaboration">Partnering and Business collaboration</option>
+			 <option value="Working a part time designer">Working a part time designer</option>
+			</select>
+		   </td>
+		  </tr>
+		  <tr>
+		   <td>Comments :</td>
+		   <td><textarea  name="comment" placeholder="Say somthing..!"></textarea></td>
+		  </tr>
+		 
+		  <tr>
+			  <td></td>
+		   <td><a href="#"><input type="submit" value="Submit" id="submit"></a></td>
+		   
+		  </tr>
+		 </table>
+		</form>
+	</div>
+</div>
+</form>	
 	</body>
 
 </html>
+		
+	
+	  
+	   <script>
+		   $(document).ready(function() {
+			   $(".btn-pop").on('click', function(){
+				   $(".cover").fadeIn('slow');
+				   $(".popup").fadeIn('slow');
+			   });
+		   });
+		   $(document).ready(function(){
+			$(".close").on('click', function(){
+				$(".cover").fadeOut('slow');
+			   });
+		   });
+	   </script>
+
+
+
+
+<style>
+	.popup{
+		font-family: arial;
+		
+	}
+	#popup{
+		width:500px;
+		margin:0 auto;
+		border:2px solid #0088cc94;
+		background: rgb(255, 255, 255);
+		color:#0088cc;
+		font-size:20px;
+		font-weight:bold;
+		border-radius:10px;
+		margin-top:40%;
+		height: 500px;
+		box-shadow: 2px 4px 20px 0px black;
+		display:none;
+		position:relative; 
+		z-index: 1000;
+	}
+	#tab-pop{
+	   margin:40px;
+   }
+	input{
+		width:190px;
+		height:30px;
+		border:2px solid #ddd;
+		border-radius: 4px;
+		font-size: 18px;
+		font-family: arial;
+		color:slategray;
+		margin-top:10px;
+		margin-left:10px;
+	}
+	select{
+		width:195px;
+		height:35px;
+		border:2px solid #ddd;
+		border-radius: 4px;
+		font-size: 18px;
+		font-family: arial;
+		color:slategray;
+		margin-top:10px;
+		margin-left:10px;
+	}
+	.popup h2{
+		margin-left:20%;
+		margin-top:20px;;
+		font-size:28px;
+		color:#08c;
+	}
+	#submit{
+		width:190px;
+		height:40px;
+		margin-left:15px;
+		margin-top:20px;
+		background: steelblue;
+		border:2px solid #08c;
+		border-radius:5px;
+		color:#fff;
+	}
+	#submit:hover{
+		background: #0088cc;
+		font-size:20px;
+	}
+	#close{
+		width:20px;
+		height:20px;
+		float:right;
+		color:#08c;
+		font-size:25px;
+		text-decoration: none;
+		text-align: center;
+		margin:10px;
+		cursor: pointer;
+		background: #fff;
+		border:none;
+
+	}
+   .cover{
+	   width:100%;
+	   position: absolute;
+	   display:none;
+	   z-index: 999;
+	   background-color: rgba(0, 0, 0, 0.397);
+	 
+	   top: 0;
+	   left: 0;
+   }
+   textarea{
+	width:190px;
+ height:30px;
+ border:2px solid #ddd;
+ border-radius: 4px;
+ font-size: 18px;
+ font-family: arial;
+ color:slategray;
+ margin-top:10px;
+ margin-left:10px;
+
+}
+</style>
+

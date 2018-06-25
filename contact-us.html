@@ -264,148 +264,27 @@
 
 			</div>
 			
-		 <div class="popup">
-			<h1>Download the Broucher Here</h1>
-			<div class="box">
-				<a class="button" href="#popup1">Download</a>
+		 
 			</div>
-			
-			<div id="popup1" class="overlay">
-				<div class="popup">
-					<h2>Here i am</h2>
-					<a class="close" href="#">&times;</a>
-					<div class="content">
-							<p>
-								<label for='name'>Your Name:</label> <br>
-								<input data-msg-required="Please enter your name." maxlength="100" class="form-control" type="text" name="name" required>
-								</p>
-
-								<p>
-								<label for='email'>Email Address:</label> <br>
-								<input type="text" name="email" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" required > <br>
-								</p>
-
-								<p>
-								<label for='phone'>Mobile No:</label> <br>
-								<input type="text" name="phone" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid Phone number." maxlength="100" class="form-control" > <br>
-								</p>
-
-								
-								<input type="submit" value="SUBMIT" class="btn btn-primary btn-lg" data-loading-text="Loading...">
-						Thank to pop me out of that button, but now i'm done so you can close this window.
+			<section class="call-to-action call-to-action-default with-button-arrow content-align-center call-to-action-in-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-9 col-lg-9">
+							<div class="call-to-action-content">
+								<h3>ProdUX, <strong> we </strong>create <strong>awesome</strong> Userfriendly design</h3>
+								<p class="mb-0">Download <strong>our product design brochure</strong> for more details</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-lg-3">
+							
+									
+								<a  href="#popup" class="btn btn-lg btn-primary btn-pop">Download Brochure!</a>
+							
+						</div>
 					</div>
 				</div>
-				<style>
-				body {
-  font-family: Arial, sans-serif;
- 
-  background-size: cover;
-  height: 100vh;
-}
-
-h1 {
-  text-align: center;
-  font-family: Tahoma, Arial, sans-serif;
-  color: #0088cc;
-  margin: 80px 0;
-}
-.popup{
-	width:100%;
-	background: rgba(255,255,255,0.2);
-}
-.box {
-  width: 40%;
-  margin: 0 auto;
-  background: rgba(255,255,255,0.2);
-  padding: 35px;
-  border: 2px solid #fff;
-  border-radius: 10px/20px;
-  background-clip: padding-box;
-  text-align: center;
-}
-
-.button {
-  font-size: 1em;
-  padding: 10px;
-  color: #0088cc;
-  border: 2px solid #0088cc;
-  border-radius: 5px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-}
-.button:hover {
-  background: #0088cc;
-  color:#fff;
-  text-decoration: none;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 30%;
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-
-.popup h2 {
-  margin-top: 0;
-  color: #333;
-  font-family: Tahoma, Arial, sans-serif;
-}
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #0088cc;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-
-  margin-top:20%;
-}
-
-@media screen and (max-width: 700px){
-  .box{
-    width: 70%;
-  }
-  .popup{
-    width: 70%;
-  }
-}
-
-lable{
-    font-size:25px;
-    font-family:Arial, Helvetica, sans-serif;
-}
-				</style>
-			</div>
+				
+			</section>
 		</div>
 
 			
@@ -526,7 +405,190 @@ Tweets by @TheProdUX
 		</script>
 		<script src="master/analytics/analytics.js"></script>
 
-	</body>
+		<div class="cover">
 
 
-</html>
+	
+			<div class="popup" id="popup">
+				
+				<form action="insert.php" method="POST" >
+					<a href="#popup1"><input class="close" type="button" value="&times;" id="close"></a>
+					  
+					   <h2>Downloading Form</h2>
+					  
+				 <table id="tab-pop">
+					 
+				  <tr>
+				   <td>Name :</td>
+				   <td><input type="text" name="username" required></td>
+				  </tr>
+				  <td>Email :</td>
+				   <td><input type="email" name="email" required></td>
+				  </tr> 
+				  <tr>
+				   <td>Phone No :</td>
+				   <td>
+					<input type="phone" name="phone" required>
+				   </td>
+				  </tr>
+				  <tr>
+				   <td>Company Name :</td>
+				   <td><input type="text" name="company" required></td>
+				  </tr>
+				  <tr>
+				   <td>I am Instreted in :</td>
+				   <td>
+					<select name="interest" required>
+					 <option selected hidden value="">Select Code</option>
+					 <option value="New Business Opportunity">New Business Opportunity</option>
+					 <option value="Design Services">Design Services</option>
+					 <option value="Animations and Videos Projects">Animations and Videos Projects</option>
+					 <option value="UX recommendations for me app">UX recommendations for me app</option>
+					 <option value="Partnering and Business collaboration">Partnering and Business collaboration</option>
+					 <option value="Working a part time designer">Working a part time designer</option>
+					</select>
+				   </td>
+				  </tr>
+				  <tr>
+				   <td>Comments :</td>
+				   <td><textarea  name="comment" placeholder="Say somthing..!"></textarea></td>
+				  </tr>
+				 
+				  <tr>
+					  <td></td>
+				   <td><a href="#"><input type="submit" value="Submit" id="submit"></a></td>
+				   
+				  </tr>
+				 </table>
+				</form>
+			</div>
+		</div>
+		</form>	
+			</body>
+		
+		</html>
+				
+			
+			  
+			   <script>
+				   $(document).ready(function() {
+					   $(".btn-pop").on('click', function(){
+						   $(".cover").fadeIn('slow');
+						   $(".popup").fadeIn('slow');
+					   });
+				   });
+				   $(document).ready(function(){
+					$(".close").on('click', function(){
+						$(".cover").fadeOut('slow');
+					   });
+				   });
+			   </script>
+		
+		
+		
+		
+		<style>
+			.popup{
+				font-family: arial;
+				
+			}
+			#popup{
+				width:500px;
+				margin:0 auto;
+				border:2px solid #0088cc94;
+				background: rgb(255, 255, 255);
+				color:#0088cc;
+				font-size:20px;
+				font-weight:bold;
+				border-radius:10px;
+				margin-top:40%;
+				height: 500px;
+				box-shadow: 2px 4px 20px 0px black;
+				display:none;
+				position:relative; 
+				z-index: 1000;
+			}
+			#tab-pop{
+			   margin:40px;
+		   }
+			input{
+				width:190px;
+				height:30px;
+				border:2px solid #ddd;
+				border-radius: 4px;
+				font-size: 18px;
+				font-family: arial;
+				color:slategray;
+				margin-top:10px;
+				margin-left:10px;
+			}
+			select{
+				width:195px;
+				height:35px;
+				border:2px solid #ddd;
+				border-radius: 4px;
+				font-size: 18px;
+				font-family: arial;
+				color:slategray;
+				margin-top:10px;
+				margin-left:10px;
+			}
+			.popup h2{
+				margin-left:20%;
+				margin-top:20px;;
+				font-size:28px;
+				color:#08c;
+			}
+			#submit{
+				width:190px;
+				height:40px;
+				margin-left:15px;
+				margin-top:20px;
+				background: steelblue;
+				border:2px solid #08c;
+				border-radius:5px;
+				color:#fff;
+			}
+			#submit:hover{
+				background: #0088cc;
+				font-size:20px;
+			}
+			#close{
+				width:20px;
+				height:20px;
+				float:right;
+				color:#08c;
+				font-size:25px;
+				text-decoration: none;
+				text-align: center;
+				margin:10px;
+				cursor: pointer;
+				background: #fff;
+				border:none;
+		
+			}
+		   .cover{
+			   width:100%;
+			   position: absolute;
+			   display:none;
+			   z-index: 999;
+			   background-color: rgba(0, 0, 0, 0.397);
+			 
+			   top: 0;
+			   left: 0;
+		   }
+		   textarea{
+	width:190px;
+ height:30px;
+ border:2px solid #ddd;
+ border-radius: 4px;
+ font-size: 18px;
+ font-family: arial;
+ color:slategray;
+ margin-top:10px;
+ margin-left:10px;
+
+}
+		</style>
+		
+		
