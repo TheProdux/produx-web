@@ -51,6 +51,7 @@
 		<link rel="stylesheet" href="css/theme-elements.css">
 		<link rel="stylesheet" href="css/theme-blog.css">
 		<link rel="stylesheet" href="css/theme-shop.css">
+		<link rel="stylesheet" href="css/form.css">
 		
 		<!-- Demo CSS -->
 
@@ -387,66 +388,65 @@ Tweets by @TheProdUX
 
   gtag('config', 'UA-111304676-1');
 </script>
-	<div class="cover">
-
-
 	
-		<div class="popup" id="popup">
-			
-			<form action="insert.php" method="POST" >
-				<a href="#popup1"><input class="close" type="button" value="&times;" id="close"></a>
-				  
-				   <h2>Downloading Form</h2>
-				  
-			 <table id="tab-pop">
-				 
-			  <tr>
-			   <td>Name :</td>
-			   <td><input type="text" name="username" required></td>
-			  </tr>
-			  <td>Email :</td>
-			   <td><input type="email" name="email" required></td>
-			  </tr> 
-			  <tr>
-			   <td>Phone No :</td>
-			   <td>
-				<input type="phone" name="phone" required>
-			   </td>
-			  </tr>
-			  <tr>
-			   <td>Company Name :</td>
-			   <td><input type="text" name="company" required></td>
-			  </tr>
-			  <tr>
-			   <td>I am Instreted in :</td>
-			   <td>
-				<select name="interest" required>
-				 <option selected hidden value="">Select Code</option>
-				 <option value="New Business Opportunity">New Business Opportunity</option>
-				 <option value="Design Services">Design Services</option>
-				 <option value="Animations and Videos Projects">Animations and Videos Projects</option>
-				 <option value="UX recommendations for me app">UX recommendations for me app</option>
-				 <option value="Partnering and Business collaboration">Partnering and Business collaboration</option>
-				 <option value="Working a part time designer">Working a part time designer</option>
-				</select>
-			   </td>
-			  </tr>
-			  <tr>
-			   <td>Comments :</td>
-			   <td><textarea  name="comment" placeholder="Say somthing..!"></textarea></td>
-			  </tr>
-			 
-			  <tr>
-				  <td></td>
-			   <td><a href="#popup1"><input type="submit" value="Submit" id="submit"></a></td>
-			   
-			  </tr>
-			 </table>
-			</form>
-		</div>
-	</div>
 	</form>	
 		</body>
+
+		<div class="cover">
+
+			<div class="popup" id="popup">
+				
+				<form action="insert.php" method="POST" >
+					<a href="#"><input class="close" type="button" value="&times;" id="close"></a>
+					  <img src="img/logo-footer.png">
+					   <h2>Downloading Form</h2>
+					  
+				 <table id="tab-pop">
+					 
+				  <tr>
+				   <td>Name :</td>
+				   <td><input type="text" name="username" required ></td>
+				  </tr>
+				  <tr>
+				  <td>Email :</td>
+				   <td><input type="email" name="email" required></td>
+				  </tr> 
+				  <tr>
+				   <td>Phone No :</td>
+				   <td>
+					<input type="phone" name="phone" required>
+				   </td>
+				  </tr>
+				  <tr>
+				   <td>Company Name :</td>
+				   <td><input type="text" name="company" required></td>
+				  </tr>
+				  <tr>
+				   <td>I am Instreted in :</td>
+				   <td>
+					<select name="interest" required>
+					 <option selected hidden value="" style="color:#aaa;">Select Code</option>
+					 <option value="New Business Opportunity">New Business Opportunity</option>
+					 <option value="Design Services">Design Services</option>
+					 <option value="Animations and Videos Projects">Animations and Videos Projects</option>
+					 <option value="UX recommendations for me app">UX recommendations for me app</option>
+					 <option value="Partnering and Business collaboration">Partnering and Business collaboration</option>
+					 <option value="Working a part time designer">Working a part time designer</option>
+					</select>
+				   </td>
+				  </tr>
+				  <tr>
+				   <td>Comments :</td>
+				   <td><textarea  name="comment" placeholder="Say somthing..!"></textarea>
+				</td>
+				  </tr>
+				 </table>
+				 <div class="submit">
+					<a href="#popup1"><input class="btn btn-success" type="submit" value="Submit" id="submit"></a>
+				 </div>
+				</form>
+			</div>
+		</div>
 	
 	</html>
 			
